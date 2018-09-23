@@ -1,7 +1,6 @@
 package stepdefinitions;
 
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
 import general.User;
 import pages.signup.SignUpPageObject;
 
