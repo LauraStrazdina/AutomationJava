@@ -1,4 +1,61 @@
 -------------------------------------------------------------------------------
 Test set: testrunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 s - in testrunner.TestRunner
+Tests run: 5, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 208.294 s <<< FAILURE! - in testrunner.TestRunner
+Successful login(This feature is about logging into the system)  Time elapsed: 154.45 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {test}
+Expected: visible
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"test"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TestDevLabs-MacBook-Pro-3.local', ip: 'fe80:0:0:0:1852:808a:c08:2d74%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/pv/_1640xgx4nl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 34f2a9dcb9109b57a9fe680cf2ee22b8
+*** Element info: {Using=css selector, value=test}
+
+Successful login(This feature is about logging into the system)  Time elapsed: 154.461 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I enter Email in login form" is undefined
+
+Successful login(This feature is about logging into the system)  Time elapsed: 154.461 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I enter Password in login form" is undefined
+
+Successful sign-up(This feature is about creating new account in the system)  Time elapsed: 26.598 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {test}
+Expected: visible
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"test"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TestDevLabs-MacBook-Pro-3.local', ip: 'fe80:0:0:0:1852:808a:c08:2d74%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/pv/_1640xgx4nl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49643}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c2208f6608d5bb16b85b6efb301ac2b2
+*** Element info: {Using=css selector, value=test}
+
+Unsuccessful sign-up(This feature is about creating new account in the system)  Time elapsed: 26.297 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {test}
+Expected: visible
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"test"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TestDevLabs-MacBook-Pro-3.local', ip: 'fe80:0:0:0:1852:808a:c08:2d74%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/pv/_1640xgx4nl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49670}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 177e4f6532482ab322cd060adf497ded
+*** Element info: {Using=css selector, value=test}
+
